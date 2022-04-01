@@ -11,7 +11,7 @@ git commit -m "menssagem" (commita e muda o Status para Unmodified)
 
 git status (mostra o status do repositório)
 
-git push origin main <url> (empurra pro github)
+git push origin main (empurra pro github)
 
 git pull main (puxa do github)
 
