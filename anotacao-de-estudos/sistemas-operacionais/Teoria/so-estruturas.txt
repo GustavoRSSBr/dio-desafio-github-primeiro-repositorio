@@ -1,0 +1,77 @@
+O que é um Sistema Operacional?
+
+	Um software que funciona como intermediário entre o usuário e o hardware, 	através de uma interface.
+	Além de ser responsável por gerenciar os recursos do hardware.
+
+Interação gráfica (janela)
+interação JCL (Linguagem de comando textual)
+interação Interação com o SO (chamadas de sistema, chamara as funcionalidades "close, mkdir, unlink") 
+
+serial (monoprogramada)
+
+concorrente (multiprogramada)
+
+----------------------------------------------------------------------
+
+Tipos e Estruturas de SO.
+
+	tipos:
+	SO monoprogramada ou monotarefas (simples) (ex:MS-DOS)
+	o processador e a memoria se dedica a um unico programa.
+	mal otimizado. (Sensores, relógios)
+
+	nova ->  executando(se usa um recurso o outro fica ocioso) -> terminada
+	vantagem: Simples e de fácil implementação.
+
+	SO multiprogramado ou multitarefas (sofisticado) (Ex: Unix, Windows) 
+	Programas executados simultaneamente em mulpiblos cores (nucleos)
+	Mais otimizado
+
+		Subdividido em 3 tipos (multiprogramado)
+
+			-Sistema de tempo Compartilhado(time sharing)
+			Sistema que permite que o SO possa interagir com vários 			terminais ou computadores diferentes, compartilhar tempo. 			(Mainframe)
+
+			-Sistema de Tempo real - sistema que precisa de um tempo 			critico para executar
+ 
+			-Sistema Batch - onde tem um lote de tarefas para executar 			e vem em forma de um job. Será executada pela CPU.
+
+Estruturas
+
+	Monolítica:
+		SO é um único módulo.
+		Conjunto de softwares que executam o hardware como se fosse um 		único programa de usuário. Fácil de gerenciar. (MS-DOS, Windows, 		Unix e Linux)
+
+	MicroKernel (Minix, Symbiam)
+		Os módulos de SO fica no nível do usuário.
+
+	Estrutura de Camadas
+		SO modular (dividir os módulos)
+		Com hierarquia
+		(Multics, OpenVMS)
+
+	Estrutura de VM (maquina virtual)
+		Um SO pode ter outros SO que conversam entre SI
+		O JAVA usa isso para traduzir os Bytecodes
+
+----------------------------------------------------------------------------------
+
+
+Chamada de Sistemas (Traps)
+
+	Chamar um módulo do sistema operacional (System Call) Nivel do usuário e 	do Kernel(Printf, create process)
+
+	instruçoes Traps
+		recebe, processa, retorna. A aplicação após a chamada, retorna do 		ponto de onde é parou. Manuseia, identifica a rotina, executa o 		procedimento, e retorna.
+
+Estrutura das Sistems Calls:
+	Interface esconde a complexidade (API) encapsular o nivel do kernel
+	Wrapper API (intercafe genérica) (Win32 API, POSIX API, JAVA API)
+
+	beneficios da API (Portabilidade e esconde complexidade)
+
+Interrupções
+	nivel de Hardware - Externo ao precessador, gerado por dispositivos
+
+Traps 
+	Dentro do procesador, causado por processo corrente.

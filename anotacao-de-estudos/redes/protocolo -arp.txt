@@ -1,0 +1,20 @@
+Protocolo ARP: 
+	Fornece resolução dinamica de endereços IP e outro tipo de endereço da camada de enlace
+	Quadro Ethernet: MAC, endereço fisico da internet
+	permite obter o MAC de uma interface a partir do IP
+
+ARP Request: 
+	Mensagem enviada requisitando a resolução de um endereço IP em endereço Fisico
+
+ARP Reply: 
+	Mensagem de resposta, contendo o endereço fisico resolvido.
+
+Cache ARP:
+	Um registro de memória que mantém um mapeamento de endereços mais recentes.
+
+pra examinar no win arp -a
+
+limpar o cache arp-d
+
+ARP Probe:
+	para verificar se o IP que está sendo atribuido na rede já está em uso

@@ -1,0 +1,17 @@
+ICMP protocolo de controle de Mensagens da Internet
+
+Comunica mensagens de erro, diagnóstico e outras que requerem atenção da rede
+
+O procolo IP, que fornece o mecanimo para entrega de datagramas entre dispositivos, carece dessa funcionalidade, e por isso o ICMP doi criado
+
+As mensagens ICMP são transmitidas em datagramas IP
+
+contem 4 campos, Tipo, código, checksum(cód. de ver. de erros) e Conteúdo.
+
+Mensagens de erro: Usa para informar erro durante a transmição
+
+Mensagem de informação: trocar iformações entre si, para testes
+
+não tem reenvio de mensagem de erro
+
+só geradas em unicast

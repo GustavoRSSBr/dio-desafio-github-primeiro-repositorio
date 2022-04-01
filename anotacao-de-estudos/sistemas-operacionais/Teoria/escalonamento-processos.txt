@@ -1,0 +1,100 @@
+Processos e Escalonamento
+
+O que é um escalonador?
+	Um módulo do sistema operacionar que vai definir a politica de prioridade 	do processo.
+
+Mudança de Contexto:
+	Realizar a mudança de estado do processo (executando, bloqueado)
+	Armazenar as coisas para retomar ele depois.
+
+------------------------------------------------------------------
+Componentes (Despachante)Dispatcher 
+Armazena e recupera o contexto
+atualiza as informações no BCP
+processo relativamente rapido
+
+(escalonador) Scheduler
+	Escolhe a próxima tarefa a receber o processador
+	mais demorado
+
+	é chamado quando:
+		um novo processo é criado
+		quando um processo cria outro
+		quando um chegou ao fim
+		quando um processo é bloqueado
+
+Quando E/S ocorre, o escalonador deve: Escolhas
+	1) Executar o processo que estava esperando esse evento;
+	2) Continuar executando o processo que estava sendo executado;ou
+	3) Executar um terceiro processo que esteja pronto para ser executado.
+
+1) Preemptivo:
+	a) Quando um processo pode, por algum motivo, perder seu uso da CPU.
+	b) Provoca uma interrupção foçada de um processo para que outro possa ser 	usado.
+
+2) Não preemptivo:
+	a) permite que o processo exutado continue executando
+	só para quando termina ou solicita uma operação de E/S ou libere 	explicitamento o processador voltando para a fila de prontos.
+
+1) Sistemas Batch (Lote)
+	a - First-Come First-Served
+		O primeiro que entra é o primeiro que sai, de forma não 				preempitiva.
+
+	b - Shortest Jon First 
+		Primeiro Escolhe os processos mais curtos
+
+tempo medio (turnaround)
+
+	c - Shorttest Remaining Time next (lote)
+		preemptivo,Tem um limite de tempo cada processo, prioriza o tempo 		restante menor.
+
+
+2) Escalonamento Sistemas Interativos (time sharing)
+	a) Round-Robin
+		preemptivo: Cada processo recebe um quantum que vai ser 				compartilhado.
+		ao final desse tempo o processo é suspenso e outro processo é 				colocado em execução.
+		o processo de troca é caro.
+		
+
+	
+	b) prioridade
+		-Cada processo possui uma prioridade;
+		-Os processos prontos com maior prioeidade são executados
+		-prioridades são atribuidadas dinamicament(pelo sistema ou 				estatisticamente)
+		-preemptivo
+		-Round-Robin pressupões igual prioridade para todos os processos
+		
+	c) multiplas filas
+		aloca mais tempo no quantum se necessário
+
+	d) Shortest Process Nesct (S.inter)
+		-mesma ideia do shortest JOb Fist
+		-processos interativos: não se conhece o tempo necessário para 				execução
+		-como empregar esse algoritmo: Estimativa de tempo
+		-com base em execuções antigas da mesma tarefa
+		-verificar comportamento passado do processo e estimar tempo
+		
+		
+	e) Algoritmo Garantido (s. inter)
+		-garantias são dadas aos processos dos usuários:
+		- n usuários (ou processos, em sistemas monousuário) -> 1/n do 		tempo da CPU para cada usuário
+	f) Algoritmo da Loteria (s. inter)
+		com duas filas os bilhetes já sorteados e bilhetes ainda n 		sorteados deixando as coisas mais justas.
+	g) Algoritmo Fair-SHare
+		-O dono do processo é levado em conta;
+	
+Algoritmos de Tempo-Real
+	Sistema Críticos (que podem causar dano a alguem)
+	1) Tipos de STR:
+		-Hard Real Time: atrasos não são tolerados; (aviões, usinas, 				hospitais)
+		-Soft Real Time: atrasos ocasionais são tolerados; Bancos, 				multimidia;
+	2) Para obter comportamento em tempo real;
+	programas são divididos em vários processos;
+	Facilitar a definição do deadline de cada processo.
+	
+	1) Eventos causam a execução de processos;
+	2) Quando um evento externo (SENSOR?) é detectado, cabe ao escalanodor
+	arrumar os processos de modo que todos os prazos sejam cumpridos.
+	3) Eventos podem ser peródicos ou Aperiódicos.
+		estaticos: Decisões de escalonamento antes do sistema começar a 		rodar
+		dinâmico: decisões de escalonamento em tempo de execução

@@ -1,0 +1,22 @@
+SHA1 (chave de 40 digitos identificador do arquivo)
+
+---------------------------------------------------------------------------
+Git Bash comandos
+
+git init (inicia o repositorio no git)
+
+git add * (adiciona ao status de Stage)
+
+git commit -m "menssagem" (commita e muda o Status para Unmodified)
+
+git status (mostra o status do repositório)
+
+git push main <url> (empurra pro github)
+
+git pull main (puxa do github)
+
+git clone <url> baixa um código do github
+
+ls -a mostra repositórios ocultos
+
+

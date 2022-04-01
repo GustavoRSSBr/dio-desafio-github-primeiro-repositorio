@@ -1,0 +1,107 @@
+Comunicação entre Processos - Interprocess Communication (IPC)
+	é necessario os processos comunicarem entre si, porém podem haver 	conflitos. (ex. Se um processo n fica pronto outro precisa abortar até 	que esse fique pronto)
+	
+	1 - Os processos se comunicam através de alguma area de armazenamento 	comum.
+	1 - Essa área pode estar na memória principal.
+
+	Condição de Corrida (problema)
+	os dois processos tentam acessar recursos de forma competitiva.
+	
+	Para tratar é necessário uma exclusão Mútua. 
+		1 região Critica de Spool de Impressão.	
+		2 Quando o processo entra na RC, ele só deveria mudar de contexto 		quando saisse da RC.
+
+-----------------------------------------------------------------------------
+
+Problemas com Comunicação de Processos
+
+1) Produtor e Consumidor
+	TEM QUE SINCRONIZAR O BUFFER
+2) Jantar dos Filósofos
+	CINCO FILOSOFOS ESTÃO SENTADOS EM UMA MESA
+	CINCO HASHI PARA 5 FILOSOFOS
+	POREM CADA FILOSOFO PRECISA DE 2 HASHI
+	FILOSOFO (PROCESSO)
+	HASHI (REGIÃO CRITICA)
+	
+	COLOCAR PRA COMER E PENSAR ALTERNADAMENTE
+	COMPARTILHAR OS RECURSOS
+	PENSAR, PEGAR, COMER E LIBERAR
+	PODE LEVAR A INANINAÇÃO (STARVATION)
+	
+	USAR UMA EXCLUÃO MUTUA PERMITIR QUE UM UNICO FILOSOFO COMA DE CADA VEZ
+	DAR UM TEMPO ALEATÓRIO PARA PEGAR O HASHI
+
+3) Leitores e Escritores
+	suspender os leitores para o escritor entrar
+	
+------------------------------------------------------------------------
+
+Deadlocks
+
+	Dispositivos e recursos são compartilhados
+	impressora, disco, arquivos, tabelas internas do SO
+	SOs sevem dar acesso exclusivo a certos recursos.
+	Deadlock: Impasse
+		.Processos ficam parados sem continuar
+		.Ocorrem tanto em recursos de HW (hardware) quanto SW 		(Software)
+	
+--------------------------------------------------------------------------
+
+Tratamento de DeadLocks
+
+PReempção
+
+N processos : P1 a Pn
+M classes diferentes de recursos:
+Ei recursos da classe i (1=< i <=m)
+usamos um vetor de recursos existente - E
+contém o número total de recursos existentes
+SE classe 1 for impressora, e E1=2, então existem duas impressoras
+
+vetor de recursos disponíveis (A)
+Ai> quantidade do recursos i disponivel no momento
+Se ambas as impressoras estiverem alocadas, A1=0
+duas matrizes
+C: matriz de alocação corrente
+Cij: número de recursos j mantidos pelo processos i
+R matriz de requisões
+Rij numero de recursos j que o processo i deseja
+
+Serve para nortear a ordem de qual processo deve ser realizdo primeiro para que não ocorra um Deadlock
+
+Deve-se saber quais os recursos que existem com antecedencia.
+----------------------------------------------------------------------------
+
+RollBack
+. Usa checkPoint
+
+Eliminar o Processo
+Kill -9 matando o processo com menos problemas
+
+Evitar dinamicamente (alto custo) overhead
+alocação de recursos a medida que forem solicitados
+
+algoritmo banqueiro para um unico tipo de recurso
+
+algoritmo banqueiro para vários tipos de recursos
+
+Funcionam mas é muito custoso
+
+estado seguro (não vai ocorrer deadlocks)
+
+estado inseguro é o inverso. (tem possibilidade de ocorrência)
+
+Prevenções de deadlock
+
+Exclusão Mútua
+Uso e Espera
+Não preempçção
+Espera Circular
+	
+	
+	Regras para programação concorrente (p/ uma boa solução)
+	1 - Dois processos nunca podem estar simultanemente dentro de suas regiões critícas.
+	2 - Não se pode fazer suposições em relação a velocidade e ao numero de CPUs.
+	3 - Um processo fora da região crítica não deve causar bloqueio a outro processo.
+	4 - Um processo não pode esperar eternamente para entrar em sua região critíca.

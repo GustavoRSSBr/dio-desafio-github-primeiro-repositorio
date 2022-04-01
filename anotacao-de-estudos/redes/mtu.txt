@@ -1,0 +1,20 @@
+- Maximum Trasmission Unit
+limite de Bytes transmitidos em um quadro
+
+O protocolo IP fragmenta os dados caso seja maior que o frame o dado
+
+MTU da Interface 
+Windows: 
+	netsh interface ipv4 show subinterfaces
+Linux:
+	ifconfig
+
+Path MTU - MTU do Caminho
+Maior valor de MTU que pode trafegar em uma rede sem que os pacotes sofram fragmentação.
+
+Path MTU Discovery
+-Determinar o caminho ideal para não fragmentar os dados
+
+-l tamanho-pacote: Permite ajustar o tamanho (payload) do pacote enviado pelo íng para o valor-tamanho
+
+-f Habilita o bit DF no pacote transmitido (impedindo a fragmentação do pacote)

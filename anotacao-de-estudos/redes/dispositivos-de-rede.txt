@@ -1,0 +1,5 @@
+Switch que permite realizar a interconexão entre dispositivos em uma rede com MAC Adress
+
+Roteador conectar redes distintas entre si com endereço IP
+
+Modem - modula o sinal recebido para ser encaminhado.

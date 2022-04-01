@@ -1,0 +1,15 @@
+Utilitário Traceroute:
+
+	Ferramenta de diagnóstico que permite ver a rota que diagramas IP seguem quando são enviados de um host a outro.
+
+	Faz uso do protocolo ICMP e do campo TTL no cabeçalho IP do datagrama.
+
+	Time to Live TTL: 
+		Campo no protocolo IP que o propósito é evitar que o pacote fique indefinido na rede. Toda vez que um pacote chega a um roteador o valor do TTL é decrementado se chegar a  retorna um tempo Excedido (sabe-se que chegou) se for mais de um roteador enviar com mais de um Roteador.
+		\Tempo Excedido (chegou no roteador)
+		\Echo Reply (chegou no host)
+
+RTT (tempo que levou pra chegar e retonar)
+
+Windows Tracert
+linux traceroute (normalmente é necessário instalar)

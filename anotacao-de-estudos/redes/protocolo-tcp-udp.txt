@@ -1,0 +1,12 @@
+Protocolo TCP
+Camada de transporte
+serviço de entrega de pacotes confiável
+orientado a conexão
+
+handshake de 3 vias (modo de sincronização do TCP)
+
+UDP:
+	não verifica se o pacote foi enviado
+	mais rápido
+	porém tem perda de pacotes
+	usado normalmente em voIP e Streaming

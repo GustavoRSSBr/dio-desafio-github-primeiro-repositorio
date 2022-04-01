@@ -1,0 +1,47 @@
+Endereço IP - Endereço Lógico que cada dispositivo da Rede tem.
+pode ser colocado manualmente ou através do servidor DHCP.
+ele é formado por 4 numeros que vai de 001 até 255.
+endereço de 32 bits dividos em 4 octetos. 192.168.0.1
+					  endereço  / pc
+
+Mascara de subrede: 255.255.255.0
+		    endereço   / pc
+
+gateway - endereço do roteador
+
+classes de endereço
+
+Classe A
+promeiro octeto entre 1 e 126
+Máscara Padrão 255.0.0.0
+
+ipconfig trazer a configuração atual da rede que a máquina está usando
+Classe B
+Primeiro Octeto entre 128 e 191
+Máscara Padrão 255.255.0.0
+
+Classe C 
+primeiro octeto 192 e 223
+Máscara Padrão 255.255.255.0
+
+Endereço Público : usado na internet
+
+privado: usados em redes internas: 
+classe A, Classe B, Classe C.
+
+loopback: 127.x.x.x para realizar diagnóstico na rede
+
+auto-configuração: (automatic private IP Addressing): 169.254.x.x
+estou fora da rede, trabalhando para um DHCP, mas que não foi dado um IP e não foi alocado manualmente tbm (problema)
+
+APIPA
+Endereçamento IP Privado Automático
+	-Atribui automaticamente IP a uma estação caso haja falha na 		comunicação com um servidor DHCP
+	-Garante a comunicação entre as estações dentro de uma rede local mesmo 	sem o DHCP
+	-Faixa de Endereços do APIPA 169.254.1.0 até 169.254.255 (classe B)
+	
+	Serve também para: Indicar que não tem conectividade com o DHCP
+			   Servidor DHCP
+			   Cabemento com problema
+			   Switch com problema (se todas as maquinas estiverem 			   assim)
+(Windows)

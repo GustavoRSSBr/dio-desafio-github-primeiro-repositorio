@@ -1,0 +1,152 @@
+Como configurar o Servidor DNS interno no Ubuntu 
+
+O que é DNS - Domain Name System / traduz nomes legíveis por humanos em endereço IP, utilizados pelos computadores.
+
+"www.bosontreinamentos.com.br" 
+
+é basicamente banco de dados
+
+Terminal
+Configurar a rede do servidor
+	sudo if config (verificar o IP e configurar um IP fixo)
+	sudo vim /etc/network/interfaces (editar)
+	criar duas novas linhas
+	auto eth0 (interface de rede na onde vou configurar a interface)
+	iface eth0 inet static (definindo que o IP é estatico)
+	address 192.168.1.200 (vai ser meu endereço ip)
+	netmask 255.255.255.0 (mascara de subrede)
+	network 192.168.1.0 (minha rede)
+	broadcast 192.168.1.255 
+	gateway 192.16.1.1 (roteador para acessar a internet)
+	
+	[esc] :wq
+e sai do arquivo
+	
+	Configurar o nosso dominio
+
+	sudo vim /etc/hosts 
+	adicionar uma entrada no inicio
+	Meu endereço IP [tab] (nome da maquina)Ubuntu-32.(dominio)gustavo.net [espaço] Ubuntu-32
+
+	[esc] :wq
+
+	hostname (verifica o nome da maquina)
+	sudo vim /etc/hostname (edita o nome da maquina)
+
+	sudo reboot (reinicia a maquina)
+
+	ping www.google.com
+	#unknown host www.google.com
+	
+	sudo vim /etc/resolv.conf
+	(arquivo ta vazio)
+	
+	preciso reconfigurar
+
+	digita em baixo nameserver 8.8.8.8 (dns do Google)
+
+	[esc] :wq
+
+	sudo apt-get install bind9 (instala o servidor dns bind9)
+	
+	sudo /etc/init.d/bind9 status (verifica se está rodando)
+	
+	cd /etc/bind
+	ls (verifica o conteudo)
+
+	sudo vim named.conf.local 
+	(adicionar zonas Dns)
+	
+	pula uma linha
+
+	//zona de pesquisa direta
+	zone "gustavo.net! {
+		type master; (tipo da zona)
+		file "/etc/bind/db.boson.net" (qual o arquivo de config que vai conter os dados da zona gustavo.net)
+		};
+
+	//zona de pesquisa reveersa
+	zone "1.168.192.in-addr.arpa" { (endereço de rede invertido)
+	type master;
+	file "/etc/bind/db.192";
+	};
+	
+	[esc] :wq
+	
+	sudo Vim named.conf.options (Editar o arquivo de opções)
+	Configurar os encaminhadores
+	forwarders {
+		192.168.1.1;
+		8.8.8.8;
+	}
+	[esc] wq:
+	
+	ls
+	
+	sudo cp dp.local db.db.gustavo.net
+	sudo cp dp.127 db.192
+	
+	sudo vim db.gustavo.net 
+	editar o local host para Ubuntu-32.gustavo.net. root.gustavo.net.
+		
+
+	abaixo do ; vamos criar alguns registros
+	gustavo.net. [tab] IN [tab] NS [tab] Ubunto-32.gustavo.net.
+	gustavo.net. [tab] IN [tab] A [tab] 192.168.1.200 (iP da maquina)
+	apaga a linha do local host e mantem o restante (opcional)
+	
+	embaixo cria outro registro
+	Ubuntu-32	IN	A 	192.168.1.200
+	roteador	IN	A	192.168.1.1
+	vendas		IN	A	192.168.1.50
+	www		IN	CNAME	gustavo.net. (opcional)
+	
+	[esc]:wq
+	
+	sudo Vim db.192 (criar reverso)
+	editar o local host para Ubuntu-32.gustavo.net. root.gustavo.net.
+	abaixo do ; vamos criar alguns registros
+	[tab]	IN	NS 	Ubuntu-32
+	1(numero do host)	IN	PTR	roteador.gustavo.net
+	50(numero do host)	IN	PTR	vendas.gustavo.net
+	200(numero do host)	IN	PTR	Ubuntu-32.gustavo.net (servidor)
+
+	[esc] :wq
+	(REINICIAR O BIND para verificar se ta tudo certo) 
+
+	sudo /etc/init.d/bind9 restart
+
+	(agora verificar os arquivos de zona)
+	named-checkzone gustavo.net /etc/bind/db.gustavo.net
+	named-checkzone gustavo.net /etc/bind/db.192
+	(REINICIA A MAQUINA)
+	sudo reboot
+
+	cat /etc/resolv.conf
+	(teste1 listar os host)
+	host -l gustavo.net
+	(teste2 localiza o servidor) 
+	nslookup gustavo.net
+	(teste3 - tras mais informações)
+	dig gustavo.net
+	(agora testar a zona reversa)
+	host 192.168.1.50 
+	ping vendas.gustavo.net
+	(agora testar o encaminhador)
+	ping www.google.com
+	(agora posso configurar outra maquina)
+	sudo vim /etc/resolv.conf
+	(muda o nameserver)
+	nameserver 192.168.1.200
+	(e search )
+	search gustavo.net
+	[esc] :wq
+	
+	agora testar
+	ping Ubuntu-32
+	ping vendas
+	ping www.google.com.br
+
+	caso erro da uma olhada nos log (geralmente algo que digitei errado)
+
+	sudo tail -f /var/log/syslog

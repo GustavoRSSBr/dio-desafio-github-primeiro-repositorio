@@ -1,0 +1,18 @@
+Rede - um conjunto de dispositivos ligados que compartilham informações e recursos entre si por meio de um servidor.
+
+LAN - Local (rede interna) (alta velocidade, alguém controla, area geográfica limitada) (Ethernet, IEEE 802.11 - WLAN - wifi)
+
+WAN - Internet (rede externa) área ampla, interligar LANs ou MANs.
+
+MAN - (redes metropolitanas) área de tamanho médio, cabeada ou sem fio (WIMAX)
+redes de tv a cabo por exemplo.
+
+PAN - espécie de rede privada a um computador (USB, Bluetooth, IR, NFC)
+
+CAN - Campus de universidade
+
+GAN - Global Area (satélites, gps)
+
+HAN - Menor que uma rede LAN maior que uma rede PAN
+
+SAN - Compartilhar arquivos (voltado para armazenamento)

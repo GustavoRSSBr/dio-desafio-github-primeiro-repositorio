@@ -1,0 +1,12 @@
+Thread 
+	as linha de execução de uma thread compoem a execução de um processo. 
+Modelo de Processos
+	1 Utilizado para agrupar recursos
+	2 um espaço de endereço (0 até algum endereço máximo de processo) e uma 		unica linha de execução (Thread)
+	3 Agrupamento de recursos (espaço de endereço com txto e dados do 		programa, arquivos abertos, processos filhos, tratadores de sinais, 		alarmes pendentes, etc)
+
+Modelo da Thread
+	1 um espaço de endereço e multiplas linhas de controle
+	2 conjunto de Thread compõe as linhas de execuções de um processo
+	3 Threads compartilham um mesmo espaço de endereçamento (sendo menos 	independentes que processos)
+	4 possuem recursos particulares (PC, registradores,pilha)

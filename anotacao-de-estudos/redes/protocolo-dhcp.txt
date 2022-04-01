@@ -1,0 +1,5 @@
+Protocolo DHCP - é um protocolo de serviço TCP/IP que permite executar a configuração dinâmica de hosts em uma rede.
+
+Sucessor do Bootp
+
+Permite conceder endereços IP, máscaras de subrede, gateway padrão, servidores DNS e muitas outras configurações aos hosts.

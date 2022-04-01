@@ -1,0 +1,31 @@
+Protocolo Spanning Tree (original) - Parte 1 IEEE802.1D
+
+	Algoritmo que garante que não ocorrerá loop em um rede local.
+	Para redes grandes - Usa um BPDU que é um protocolo que descobre portas que podem causar loops e pode bloquear essa porta, e tambem pode definir qual o switch principal.
+
+configurando as portas de 3 maneiras
+	- Root Port: porta usada para chegar no root bridge (switch principal)
+	- designated port: porta que encaminha os quadros
+	- blocking port: porta que , caso ativada, é bloqueada.
+
+o switch principal vai ter o mac adress menor a primeira parte vai ser sempre 32768 (MAC)
+
+Estados da Porta 
+
+	blocking - Porta bloqueada, caso esteja ativa pode causar loop. Continua reccebendo BPDUs.
+
+	listening - Não encaminha os quadros e tambbém não popula a tabela MAC. Ela vai aguardar os BPBUs para saber se ela pode ou não ser uma porta de encaminhamento
+
+	learning - Aprende os endereços Learnig
+
+	Forwarding - Porta normal que recebe
+
+	Disable - porta desativada manualmente.
+
+	RSTP (mais rapido que o Original)
+
+porta bloqueada é dividida em duas:
+
+	alternate port: uma porta alternativa para se chegar na Root Bridge.
+
+	Backup Port: uma porta o qual o switch não descartou as informações e pode 	ser rapidamente usada quando uma outra porta falhar.

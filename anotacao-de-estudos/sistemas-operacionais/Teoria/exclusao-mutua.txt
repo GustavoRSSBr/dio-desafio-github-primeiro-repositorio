@@ -1,0 +1,121 @@
+soluções para a exclusão mútua
+1 espera ocupada
+2 primitivas Sleep
+3 semaforos
+4 monitores
+5 troca de mensagens
+
+------------------------------------------------------------------------------
+
+Espera Ocupada (busy Waiting)
+	Consiste na contante checagem por algum valor
+	
+	Desabilitar interrupções
+		- Cada processo desabilita todas as suas interrupções (inclusive o 		relógio) ao entrar na região crítica.
+		Com as interrupções desabilitadas, a CPU não realiza chaveamento 		entre os processos.
+		-Faz com que não haja processo rodando; funciona bem se for 				monoprocessado (ambientes monoprocessados)
+		
+	variáveis de travamento (lock)
+		O processo que deseja utilizar uma região critica atribui um valor 		a uma variável (compartlhada) chamada lock
+		
+		se a variavel está com o valor 0 (nenhum processo está na região 		critica)
+		
+		apreesenta o mesmo problema do exemplo da impressão
+		
+	Estrita Alternancia (Strick Alternation)
+		.Variavel turn controla quem é a vez
+		.Alternancia "rigorosa"
+
+	solução de Peterson e Instrução TSL
+		.Antes de entrar na região Critica 
+		só vai entrar na região se a função entra_região for chamada
+		
+	Desvantagem da Exclusão mutua com espera
+		desperdiça tempo de CPU
+------------------------------------------------------------------------------
+
+Soluções de dormir e acordar (Sleep and Wake-up)
+
+	um processo é colocado para dormir caso a região critica esteja ocupada.
+	
+	Vamos usar duas chamadas Sleep and WAke-UP para bloquear e desbloquar o 	processo.
+
+Buffer vai ter uma variavel Count que controla a quantidade de dados no mesmo
+Produtor e Consumidor são colocados para dormir ou acordar de acordo com a quantidade de dados no Buffer.
+
+--------------------------------------------------------------------------------
+
+Semáforos
+	-Váriavel utilizada para controlar o acesso a recursos compartilhados
+	-Sincronizar o uso de recursos em grande quantidade
+	-Nasceu como proporsta para contar o numero de wake-ups armazenados para uso futuro
+	-Conta o número de recursos ainda disponiveis no sistema
+
+	Semáforo for 0 - indica dizer que não há recurso livre
+		.nenhum wake up armazenado
+	Semáforo>0 - recurso livre
+		.um ou mais wake-ups estão pendentes
+
+	.Generalizações de Sleep e Wake-up.
+
+	1° operação - Down
+	Verifica se o valor do semaforo é maior que 0
+	se for semaforo = semaforo -1, então continua.
+	se for , o processo que executou o down é colocado para dormir, sem completar o down.
+
+	executada sempre que um processo deseja usar um recurso compartilhado
+	primitiva é conhecida também como wait(semáforo)
+
+	2° Operação = UP
+	ou Signal (semáforo)
+	semaforo = semáforo +1
+	Se há processos dormindo nesse semáforo, escolhe um deles e o desbloqueia (permite que complete o down)
+	.Nesse caso o valor do semáforro permanece o mesmo (zero)
+	.Executada sempre que um processo liberar o recurso.
+
+	semaforo geral para contagem
+		inicializa com o numero de recursos disponivel
+	
+	semaforo binario só tem 2 valores ou booleano.
+
+Monitor 
+	-Primitiva de alto nível para sincronizar processos e de fácil uso.
+	-conjunto de procedimentos, variáveis e estruturas de dados agrupados em um unico módulo ou pacote
+	-somente um processo pode estar ativo dentro do monitor em um mesmo intante
+	-outros processos ficam bloqueados até que possam estar ativos no monitor
+	-só pode ser usado em JAVA
+	-Todos os recursos compartilhados entre processos devem estar implementados dentro do monitor
+--------------------------------------------------------------------------------
+
+Passagem de mensagem (melhor para mais de uma maquina) (protocolo TCP/IP)
+.send (destino, menssagem)
+.receive (fonte, menssagem)
+
+	se não houver menssagem disponível o receptor pode bloquear ou retornar com erro.
+
+tipos de primitivas
+
+.bloqueantes: quando o processo que as executar ficar bloqueado até que a operação seja bem sucedida
+
+.não bloqueantes: quando o processo executar a primitiva continuar sua execução normal	
+
+processos 
+sincrono b---> b
+
+semi sincrona b -------> nb
+	      nb         b
+
+assincrona nb ---------> nb	
+
+RPC
+	um processo pode comandar a execução de um procedimento situado em outra maquina
+
+	O processo chamador deverá ficar bloqueado até que o procedimento chamado termine
+
+	tanto a chamada quanto o retorno podem  envolver troca de menssagem, passando parâmetros
+
+RMI JAVA permite que um objeto ativo possa interagir com objetos de outras maquinas virtuais JAVA.
+
+Caixa postal funciona como se fosse um buffer
+
+Portos (TCP)

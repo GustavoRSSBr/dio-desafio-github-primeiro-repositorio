@@ -1,0 +1,12 @@
+O escopo de redes é a forma que os dispositivos são interligados na rede.
+Tipos:
+
+	Barramento - Todos estão ligados no mesmo cabo, precisa de uma terminação em cada uma das pontas (desvantagem, danificações no cabo prejudica a rede como um todo)
+
+	Anel - Micros ligados entre si (fibra) os dados trafegam em apenas uma direção passando por todos os dispositivos
+
+	Estrela (mais usado) - Os dipositivos são conectados através de um dispositvo "concentrador" (Switch, HUB)
+
+	Malha - (redes grandes) (radio) os nós possuem mais de uma conexão.
+
+	Híbrida: Quando mais de uma topologia é usada na mesma rede, por exemplo, "barramento-estrela"

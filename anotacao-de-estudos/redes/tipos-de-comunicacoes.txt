@@ -1,0 +1,15 @@
+tipos de comunicação
+Inicast (um dispositivo se conecta diretamente com outro "troca de arquivos"), Broadcast (um dispositivo envia para todos na rede "dominio de Broadcast)
+Multicast (um dispositivo conversa com um grupo)
+
+------------------------------------------------------------------
+
+dominio de Broadcast - até onde chega o Broadcast. 
+é o conjunto de dispositivos que recebe um quadro/frame broadcast enviado de um dispositivo que está nessa mesma rede.
+
+------------------------------------------------------------------
+
+Vlans Permite segmentar um dominio de broadcast (organizar e dar mais segurança)
+QoS - dar prioridade a algo na rede
+
+Protocolo 802.1Q =  na comunicação entre 2 switch é inserido uma TAG no meio do frame e vai falar em qual Vlan está o computador. Porta Trunk (pertence a todas as Vlans no 2 switch)

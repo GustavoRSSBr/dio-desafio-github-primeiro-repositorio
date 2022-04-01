@@ -1,0 +1,8 @@
+Camada de Enlace (modelo OSI):
+	traduzir as informações de rede em bit para a camada fisica
+	subdividida em duas subcamadas
+		Controle de Link Lógico(LCC)
+		Controle de acesso ao meio (MAC)
+	Frames com endereços de origem e destino
+	MAC - Como os dados são colocados no meio fisico (endereço fisico).
+	LCC - conhecer qual procotocolo está atuando na camada de rede (faz a 	interface da parte fisica para a parte logica e vice versa)

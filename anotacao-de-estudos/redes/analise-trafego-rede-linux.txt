@@ -1,0 +1,25 @@
+sudo tcpdumo -D
+(mostra as interfaces disponiveis)
+sudo tcpdump -i eth0
+(seleciona a interface que terá os pacotes capturado)
+Crtl+c encerra o processo
+
+sudo tcpdump -i eth0 -w captura.cap (gravar os pacotes em um arquivo)
+Ctrl+c
+
+sudo tcpdump -r captura.cap (mostra o arquivo que gravou os pacotes)
+
+sudo tcpdumo -i eth0 arp (filtra a captura trafego de um protocolo especifico)
+
+sudo tcpdumo -c 10 (limita a quantidade de capturas)-i eth0 
+
+sudo tcpdumo -i eth0 greater 100 ( maior que 100, limita a quantidade dos bits do pacote a ser capturado)
+--------------------------------------------------------------------------------
+
+Como funciona o programa Ping (icmp) serve para testar a conectividade entre dois hosts em uma rede.
+
+Se não houver resposta pode não haver comunicação entre eles ou está bloqueado o seu acesso.
+
+sudo tcpdumo -i eth0 port 53 (limita a os pacotes somente de determinada porta)
+
+sudo tcpdump -i eth0 dst 64.233.186.121 and icmp (limita os pacotes ao endereço e protocolo)

@@ -1,0 +1,5 @@
+Endereço MAC - Endereço Fisico, em gravado no hardware (chip) tem 48bits escrito em hexadecimal 00:23:10:35:00:3B parte1 00:23:10:(/) Parte 2 35:00:3B
+
+é dividido em duas partes a primeira identifica o fabricante e a segunda a placa.
+
+As três partes de um quadro (frame) tem um cabeçalho que fala o MAC Origem e Mac Destino, os dados (informações) e o trailer (informação de verificação para saber se foi ou não alterado durante o envio)

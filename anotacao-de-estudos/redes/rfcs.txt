@@ -1,0 +1,20 @@
+RFCs (manual de controle de todos os protocolos já feito)
+
+Request for Commentes 
+
+publicações que documentam os padrões e protocos oficiais da Internet
+Gerenciados pelo IETF - Internet Engineering Task Force
+Podem conter de uma página a várias centenas de páginas de informações sobre um padrão
+São identificados por um numero
+
+Status dos RFCs
+Informacional
+experimental
+melhor Pratica Atual (Best Current Practice/BPC)
+Trilha dos Padroes (STandards Track)
+	-proposto (Proposes STandards)
+	-Rascunho (Draft Standard)
+	-Padrão da Internet (Internet Standard)
+Histórico (historic)
+
+Consultado na Internet

@@ -1,0 +1,37 @@
+modelo OSI
+Um conjunto de protocolos = regras
+
+Descreve como parte da rede deve trabalhar, define um padrão a ser seguido.
+
+É dividido em 7 camadas:
+
+	1 Fisica: Orientar como as coisas fisicas funcionam, os fabricantes tem que levar em consideração as orientação. Hardware/Sinal elétrico/bits
+
+	2 enlace: Endereço Físico (MAC) / Verificação Erros
+
+	3 rede: Endereço lógico(IP) / roteamento (o caminho que é feito para chegar ao endereço)
+
+	4 transporte: Conexão entre hosts e portas(serve para não conflitar as comunicações com a rede (porta de origem e destino)
+Procolos TCP (orientado a conexão, pede confirmação) / UDP (não pede conexão, mais rápido)
+
+	5 sessão: Controle das sessões entre aplicativos (como se mantem separadas e como são canceladas)
+
+	6 apresentação: Formatos (gif,jpeg) / Criptografia 
+
+	7 aplicação: Toda a parte de interface com aplicativos na parte de redes (email, navegador) programas que acessam a rede. Protocolos POP, SMTP.
+---------------------------------------------------------------------------------
+
+
+TCP/IP - DoD
+
+dividido em 4 camadas
+ 
+camada/protocolo:
+
+	Aplicação (HTTP(Hipertexto), SMTP(correio eletrônico), IMAPv.4 (correio eletrônico),FTP(tranferência de arquivo),SIP(transporte de voz),SSH(conexão segura entre 2 hosts) ,Telnet)
+
+	Transporte (TCP (comunicação e confirmação) /UDP (sem confirmação))
+
+	Rede(internet) (IPv4 (versão do IP usada atualmente), IPv6)
+
+	Física (ARP, Ethernet(define as config da placa de rede), FDDI(fibra ótica))

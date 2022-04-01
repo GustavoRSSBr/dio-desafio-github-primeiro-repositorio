@@ -1,0 +1,96 @@
+Protocolo Ethernet
+
+	conjunto de tecnologias para rede local.
+
+	Os padrões Ethernet compreendem variantes de cabeamento e transmissão de sinal.
+
+	(velocidade de transmissão) Bits por segundos Standard Ethernet (10 mbps) Fast Ethernet (100Mbps) e Gigabit Ethernet (1000 Mbps)
+
+	Ela opera nas duas primeiras camadas do modelo OSI (Fisica e Enlace)
+
+	-Simplex permite a comunicação em apenas uma diferação com a largura de banda usada para a transmissão do sinal
+
+	-half duplex, permite o envio e recebmento dos dados, mas não ao mesmo tempo
+
+	-full duplex permite enviar e reveber ao mesmo tempo.
+----------------------------------------------------------------------------------
+
+Cabo Par Trançado 
+	
+
+	- esse é o mais utilizdo
+	-pussui 4 pares de fio
+	- cada par possui uma quantidade de tranças (torções) por metro
+	- Cada par possui Sinais iguais porém opostos, isso faz com que os pares minimizem interferencias.
+
+	UTP - sem proteção
+	FTP - Com proteção (malha para blindar) (quando houver interferencia elétro magnética)
+	S/STP - Com proteção para cada par além da malha
+
+	STP-A Token ring
+
+	CMX - para instalações residencias com pouco cabo
+	CM - Para intalações em lugares com alta ocupação, com fluxo de ar forçado
+	CMR (riser) - Para intalações Verticais como em "Shafts"
+	CMP (plenum) - Aplicação Horizontal em locais onde gases tóxicos se espalhando rapidamente poderiam causar danos as pessoas.
+
+	patch cable - tamanho menor, para fazer manobra. mais maleavel.
+
+	Categoria 3 
+		-para redes Etherne 10Mbps
+
+	Categoria 5
+		-para redes Ethernet 100mbps
+
+	Categoria 5e
+		-indicado para redes Ethernet 1000Mbps 
+
+	Categoria 6 
+		-indicado para redes Ethernet 10Gbps (55 metros)
+
+	Categoria 6a 
+		-indicado para redes Ethernet 10Gbps (100 metros)
+
+	Conector RJ-45 que são utilizados no Par trançado
+
+	O de cadegoria 6 é um pouco diferente
+
+	Existem duas ordens padrão de cores, existe um verificador de cabo
+cabo cross Switch entre Switch e pc entre pc
+
+--------------------------------------------------------------------------------
+
+Fibra ótica
+
+	-é um dos mais importantes
+	-os dados são transmitidos em forma de luz
+	-imune a interferencia
+	-baixa atenuação
+	-Alta taxa de dados em longas distancias
+
+	Fibra multimodo (Back-Bone, ligação entre 2 predios)
+		Usada em aplicações onde distancias menores são consideradas (2 km)
+		Normalmente utiliza LED
+		O tamanho do núcle maior
+	Fibra monomodo
+		Usada para transmissões em longas distâncias
+		normalmente utiliza Laser
+		O núcleo tem um tamanho menor e aluz trafega por um caminho Reto
+
+	Conectores de Fibra ótica 
+
+		conector ST (mais antigo tem uma travinha)
+
+		Conector SC (também tem uma travinha) e é mais fácil que o anterior
+
+		Conector LC é menor, mais fácil de lidar, consegue trafegar duas fibras, usado para tecnologia full Duplex
+
+		Conector MTRJ o mais fácil de instalar de todos
+
+----------------------------------------------------------------------
+
+Cabo Coaxial
+	é usado para transimtir sinais usado não só em redes, mas em CFTV e TV a cabo. cobre ou estanho, isolante, malha metalica, plastico.
+
+	Conector F
+	Conector BNC (mais pra câmeras)

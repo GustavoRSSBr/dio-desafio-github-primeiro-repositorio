@@ -1,0 +1,42 @@
+Processos programa em execução. 
+	possui dados e estado (pronto para ser executado, execução, bloqueado	(interrupção))
+
+Programa 
+	algoritmo codificado
+
+processo é a forma que o SO vai visualizar essse programa e executar.
+
+processo em primeiro plano, interação direta com o usuário.
+
+processo de segundo plano, (background) não tem interação direta com o usuário. (recepção e envio de email, servidor de impressão)
+
+Cada processo possui, 1 conjunto de instruções, 2 espaço de enderaçemento, 3 contexto de hardware (valores que o hardware vai conter referente ao processo, registrador, ponteiro)
+4 contexto de software (atributos em geral, como lista de arquivos abertos)
+
+Espaço de endereçãmento :
+	1) texto.
+	2) dados.
+	3) pilha de execução.
+
+Tabela de Processos
+	1) Tambem chamada de BCP (bloco de controle de processos)
+	2) contém informações de contexto de cada processo
+
+PID (identificação do processo)
+
+Caracteristicas de Processo
+	1) Processos CPU-bound (orientado a CPU) processos que usam bastante o 	precessador
+	2 Processo I/O-bound (orientadoa a E/S) reliza muito E/S
+	Ideal: existir um balanceamento. (alternancia)
+
+criação de processo (nasce, vive e morre)
+inicialização do sistema, chamada de sistema, requisição do usuario, inicialização de um processo em batch
+
+UNIX fork()
+WIndows Create Process
+
+morre com término normal ou por erro.
+
+execução: CPU
+Bloqueado E/S ou Chamada de SIstema
+Pronto: Aguardando a CPU
