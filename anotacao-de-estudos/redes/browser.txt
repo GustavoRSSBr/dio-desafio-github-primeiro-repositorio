@@ -1,0 +1,18 @@
+Browser - navegador 
+
+	interpreta a LP (linguagem de programação) para a linguagem humana.
+	texto, multimidia.
+	
+	plug-ins
+		ferramentas que pode ser instaladas para auxiliar o usuário no navegador.
+
+página estática
+	interação limitada, uma interface que te leva a outras.
+página dinâmica
+	mais interação com a página sem a necessidade de ir abrir outra interface.
+
+----------------------------------------------------------------------------------
+	
+	
+
+

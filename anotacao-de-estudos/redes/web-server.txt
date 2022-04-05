@@ -1,0 +1,8 @@
+estático - servidor fisíco
+
+dinâmico 
+	softwares que estão nos estáticos (file server, application server, database)
+	precisam estar em um servidor
+
+Web-service
+	interface disponível para fazer requisições e consultas em bancos de dados inacessíveis (Correios, Governo)

@@ -1,0 +1,102 @@
+O que é a internet?
+
+	-Uma rede publica mundial, que surgiu na epoca da guerra fria com o nome de ARPANET
+
+	75% dos brasileiros tem acesso a internet
+---------------------------------------------------------------------------------
+termos chaves
+
+Download/upload - baixar/enviar 
+
+Navegador - interface gráfica para acessar a internet
+
+banda larga - tipo específico de conexão com internet
+
+cache - um site salva dados de no seu computador para facilitar o seu acesso
+
+crack - Chave de acesso pirata
+
+email - correio eletrônico
+
+emoticons/emoji - figurinhas
+
+gif/jpg/png (formatos de arquivo de imagem)
+
+Host - servidor 
+
+HTML - linguagem de marcação da internet
+
+HTTP - protocolo de internet
+
+icone - figura representativa
+
+link - atalho para uma url
+
+url - endereço de um site
+
+login/logout - (acesso e saida)
+
+mp3 - formato de audio
+
+multimidia - audio e video 
+
+nick - apelido 
+
+online - conectado
+
+pixel - cada ponto de elemento de imagem na nossa tela
+
+spam - emails massivos
+
+virús - softwares maliciosos que causam dano a maquina ou ao usuário
+
+
+keylogger - capita o seu teclado
+
+phishing - modo de roubar dados enganando as pessoas
+
+backup - cópia de segurança dos dados
+
+vlog - diário em forma de video
+
+blog - diário em forma de texto
+
+cyber bullying - ato difamatório feito online
+
+3g/4g/5g - internet móveis mais famosas
+
+cookies - dados usados para verificar as preferencias do usuario.
+
+firewall - parede pra impedir acesso indevido no seu computador
+
+hacker - pessoas que tentam burlar a segurança de um software, site e etc..
+
+click bait - sugestões para fazer você clicar em deerminado link
+
+IP - protocolo de internet
+
+fake news - noticias falsas
+
+podcast - programa de audio online
+
+pop-up - caixinhas que abrem nos sites
+
+youtuber - pessoa que produz conteúdo para o youtube
+
+-------------------------------------------------------------------
+
+backbone 
+	espinha dorsal da internet. gerencia a internet.
+	cada país tem um ou mais provedores de acesso, que são as empresas de telefonia responsáveis pela distribuição desse sinal.
+
+------------------------------------------------------------------------
+
+ping <site> - joga pacotes e mostra o ip do site.
+
+-----------------------------------------------------------------------------
+
+
+
+
+
+

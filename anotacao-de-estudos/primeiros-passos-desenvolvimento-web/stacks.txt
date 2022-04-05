@@ -1,0 +1,18 @@
+Stacks?
+	Pilhas de tecnologias, conjunto de softwares necessários e suficientes para executar um app
+	linguagens de programação
+	ambiente e ferramentas de interação com app
+	capacidade e limitação de performance
+	pontos fortes e fracos do app/sw
+
+---------------------------------------------------------------------
+
+Front-end
+	parte da frente, cuida da parte visual do software na maioria dos casos (HTML, CSS) - (JS, PHP e etc..)
+
+back-end
+	parte de trás, cuida da parte lógica do software, funções, ferramentas, banco de dados, regras de negócios, validações e etc...
+
+Full stack
+	profissional que trabalha tanto back-end e front-end.
+	

@@ -1,0 +1,10 @@
+portas:
+	por onde será enviado e recebido os dados
+
+20: FTP (envio de arquivo)
+22: SSH (conexão segura entre dois computadores)
+25: SMTP (email)
+53: DNS (tradutor de ip)
+80: HTTP (internet)
+443: HTTPS (internet segura)
+3306: MySQL (banco de dados)

@@ -1,0 +1,30 @@
+SMS 
+	serviço de mensagem de texto
+
+MMS
+	serviço de mensagem por multimidia
+
+Conexão móveis
+	1g (analógico) 10kbps, 2g (digital) 97kbps, 2,5g 32-80kbps - dados + voz, 2,75g  128-236 kbps, 3g 7mbps, 4g 22,1 mbps, 5g 10gbps.
+
+-----------------------------------------------------------------------------
+
+WI-FI
+
+padrões 
+	IEEE 802.11: 2,4 GHz, 2Mbps
+	IEEE 802.11a: 5 GHz, 54Mbps
+	IEEE 802.11b: 2,4 GHz, 11Mbps
+	IEEE 802.11g: 2,4 GHz, 54Mbps
+	IEEE 802.11n: 2,4/5 GHz 15-600Mbps
+Segurança:
+WEP: chaves de 64bits e de 128bits
+WPA: chave trocada periódicamente
+WPA2: +segurança +processamento
+
+-------------------------------------------------------------------------------
+Dispositivos na rede
+	impressora, scanner, Chromecast
+--------------------------------------------------------------------------------
+Bluetooth
+	conexão ponto-a-ponto

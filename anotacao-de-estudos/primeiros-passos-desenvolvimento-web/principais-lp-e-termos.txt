@@ -1,0 +1,44 @@
+HTML (linguagem de marcação)
+CSS (linguagem de marcação)
+JavaScript (jQuery, AJAX, diversas libs)
+PHP
+.NET
+ASP
+Java
+Ruby (on Rails)
+Python
+Perl
+C/C++/C#
+-----------------------------------------------------------
+404 (erro)
+Algoritmo (receita)
+ALT (texto alternativo)
+API (funcionalidades a mais, tipo um plugin)
+Aplicação (sw,programa)
+dll/biblioteca (conjunto de ferramentas para fazer ago)
+Bootstrap (framework de Javscipt)
+Breakpoint (ponto de parada de um debug ou pontos bases de um sw para diversos dispositivos)
+Bug - erro
+Código - instruções
+Controle de versão - sw que controla versão - git github
+Debug - processo de varredura de bugs
+Deploy - pequeno pacote a ser publicado.
+design adaptativo/responsivo - se adapta a qualquer tipo de pele
+documentação - interna (comentarios no algoritmo) externa (manual)
+DPI - proporção de pontos na tela (resolução)
+Estrutura de dados - (arrays, filas e etc...)
+Favicon - figurinha que representa o site
+Fontes - tipo de letra
+Framework - caixa de ferramentas disponiveis
+Meta tags - tags html que tem funções específicas
+MVC - Arquitetura de software que separa o sw (model,view,controller)
+MVP - Minimo viavel
+MySQL - linguagem de banco de dados
+Solução - um software ou conjunto de softwares a ser oferecido para o cliente
+SLL - camada de segurança dos sites
+UI - cara do sistema
+UX - experiência de usuário
+WYSIWYG - o que vc vê é o que vc recebe. (operações visuais)
+
+
+
