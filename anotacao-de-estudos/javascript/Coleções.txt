@@ -1,0 +1,56 @@
+Map:
+	Coleção Map
+		uma coleção de arrays no formato [chave,valor];
+		pode ser iterado por um loop fot...of
+	//métodos no Map
+	const myMap = new Map()
+	
+	myMap.set ('chave' , 'valor');
+	//setando a chave e o seu valor
+	
+	myMap.get('chave');
+	//retorna o valor
+
+	myMap.delete ("chave")
+	//deleta o valor
+
+	myMap.get ("chave")
+	//vai voltar "undefined", pq o valor não existe mais na coleção.
+
+	
+	Maps 
+		pode ter chave de qualquer tipo
+		possuem a propriedade length
+		são mais fáceis de iterar
+		utilizado quando o valor das chaves é desconhecido
+		os valores tem o mesmo tipo
+
+
+
+
+Set:
+	Coleção Set
+		São estruturas que armazenam apenas valores unicos
+
+	//métodos no Set
+	mySet.add(1);
+	mySet.add(5);
+	//adiciona valores ao set
+
+	mySet.has(1);
+	//true
+
+	mySet.has(3);
+	//false
+	//verifica se exite o valor dentro do set
+
+	mySet.delete(5);
+	//deleta o valor
+
+		Consulta o nume de registros pela propriedade size e não lenght;
+		Não possui os métodos map, filter, reduce etc.
+
+
+
+
+	
