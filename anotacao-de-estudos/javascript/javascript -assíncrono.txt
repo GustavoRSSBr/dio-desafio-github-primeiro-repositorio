@@ -1,0 +1,26 @@
+Assíncrono:
+	Que não ocorre ao mesmo tempo.
+
+	Js roda de maneira sincrona por padrão.
+
+Promises (promessa)
+	objeto assíncrono
+
+	 3 estados: pending, fulfilled, rejected;
+
+	.then((result)) vai fazer as coisas caso a promise seja resolvida.
+
+	async (dizer para a função que ela é assincrona)
+	await (lida exclusivamente com a promisse: Para o código para resolver a promise. 
+
+
+APIs 
+	Aplicacion Programming Interface
+
+	Intermedia os resultados do back end com o que é apresentado no front end.
+	acessada por meio de URLs
+	
+	JSON - notação de objeto JavaScript
+
+	fetch(url, options) - método que retorna uma promise e consome API
+	   

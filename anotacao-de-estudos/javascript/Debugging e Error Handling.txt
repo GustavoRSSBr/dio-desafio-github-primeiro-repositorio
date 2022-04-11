@@ -1,0 +1,21 @@
+Tipos de erros:
+	Error do ECMAScript
+		Erro que acontece em tempo de execução, erro na escrita do 
+código. Composto por mensagem, nome, Linha e Call Stack(pilha de chamadas até chegar ao erro).
+
+	DOMException
+		relacionados ao código qu está sendo rodado na página da web, String com caracter inválido. Inserindo um nó(elemento) em um local indevido e etc.
+
+
+Tratamento de erros:
+	Trhow:  Retorna um erro mostrando todas as suas propriedades.
+	   X
+	return: Tu retorna uma dado qualquer (String, int, double e etc..)
+
+Try/catch:
+	No try (verifica um pedaço do código) Catch (manipula o erro)
+
+finally: 
+	chama outro oedaço de código para ser verificado depois do try/catch;
+
+
