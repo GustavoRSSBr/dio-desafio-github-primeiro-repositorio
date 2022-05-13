@@ -1,0 +1,50 @@
+variáveis um espaço da memória reservado para armazenar dados.
+
+Boas Práticas!
+
+não podem começar com numeros
+evitar usar $ e _ 
+caracteres especiais não utilizar.
+são case-sensitive;
+sem espaços
+não podem ser palavras reservadas do java.
+sempre come~ar com letra minúscula
+nomes expressivos
+notação camelo 
+quando é final vai ser tudo em maiusculo e separada por _
+final um tipo de variável onde é armazenado um valor constante que n vai ser mudado.
+
+---------------------------------------------------------------------------------
+
+Tipos de dados - valor, conjunto de valores que pode assumir e consequentemente as operações que podem ser realizada com o mesmo. (junção das 3 coisas)
+
+Estática(forte) - a linguagem obriga você a definir o tipo da váriavel durante sua aplicação
+
+Dinamica(fraco) - Não é obrigado a definir o tipo na criação.
+
+Primitivo - tipos de dados mais básicos atônicos. Numeral ou textual 
+Composto - composto de varios tipos de dados (primitivos ou compostos)
+
+devemos declarar de acordo com a finalidade
+tipos de dados: Todos começam com um valor default
+
+textual - char(16 bits) usa aspas simples
+String - textos e usa aspas duplas
+
+numeral (byte = -128 a 127) short (-32768 a 32767) int ( -2 bilhoes a 2 bilhoes)
+long (64 bits) float (32 bits e decimais) double (64 bits e decimais)
+
+lógico  boulean (verdadeiro ou falso)
+
+objeto
+
+---------------------------------------------------------------------------
+
+Casting - mudar o tipo da váriavel
+
+Upcast - muda para um dado maior
+
+downcast - muda para uma capacidade menor (tem que definir o tipo)
+
+exemplo: int i; long L = 100; i = (int) l;
+

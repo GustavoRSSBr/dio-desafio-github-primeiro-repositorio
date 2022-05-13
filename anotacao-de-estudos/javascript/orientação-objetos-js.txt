@@ -1,0 +1,17 @@
+Paradigmas da programação
+
+imperativo: Como vai resolver os problemas, orientação a objetos.
+Declarativo: Banco de dados, declaração funcional.
+
+abstração: Pegar um problema complexo e simplificar e generalizar ele.
+
+herança: Objeto filho herda as caracteristicas do pai.
+
+encapsulamento: Cada classe tem propriedades e métodos independentes do restante do código.
+
+Polimorfismo: Objetos podem herdar a mesma classe pai, mas se comportam de maneiras diferentes quando invocamos o seu método.
+
+
+OOJS
+Protótipos
+	esqueleto de todos os objetos.

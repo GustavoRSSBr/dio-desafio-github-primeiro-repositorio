@@ -1,0 +1,1 @@
+ferramenta que configura automaticamento nosso projeto.

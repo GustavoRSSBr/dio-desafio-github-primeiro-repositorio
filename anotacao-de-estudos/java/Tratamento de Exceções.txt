@@ -1,0 +1,11 @@
+Exceção é um evento que interrompe o fluxo normal do processamento de uma classe.
+
+O uso correto deixa o programa mais robusto e confiável
+
+Com o de exceções o programa continua depois de lidar com o problema.
+
+Error: problema de recurso
+
+unchecked (runtime): erro de lógica
+
+checked Exception: devem ser evitados e tratados pelo desenvolvedor. 

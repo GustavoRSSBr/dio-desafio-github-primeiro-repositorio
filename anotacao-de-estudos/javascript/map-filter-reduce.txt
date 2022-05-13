@@ -1,0 +1,62 @@
+método Map:
+
+Cria um novo array
+não modifica o array original
+realiza as operações em ordem
+
+array.map (callback, thisArg) 
+	callback(item, index, array): função a ser executada em cada elemento.
+	thisArg(opcional): valor de 'this' dentro da função de callback
+
+const array = [0, 2, 3, 4];
+array.map((item) => item * 2); //==> retorno [0, 4, 60, 8]
+
+	X
+
+forEach
+
+const array [1, 2, 3, 4];
+
+array.forEach((item) => item *2); // ==> retorna: undefined
+
+	valor de retorno diferente
+	verificar se precisa de um array auxiliar
+
+
+---------------------------------------------------------------------------
+
+filter
+
+	coloca o array dentro de um filtro
+
+	cria um novo array original
+	não modifica o original
+
+array.filter(callvack, thisArg)
+
+const fruta = ['maça fuji', 'maça verde','laranja','abacaxi'];
+
+frutas.filter((fruta) => fruta.includes('maça')) .include inclui a palavra na string
+
+//retorno: ['maça fuji','maça verde'];
+
+------------------------------------------------------------------------------
+reduce
+
+executa uma função em todos os elementos do aray, retornando um valor único
+
+array.reduce(callbackFn, initialValue) 
+callback: função a ser executada a partir do acumulador
+initialValue: valor sobre o qual o retorno final irá atuar, vai ser jogado no acumulator
+
+const callbackFn = function(acumulator, currentValue, index, array) {
+}
+
+array.reduce(callbackFn, initialValue)
+
+acumulator/prevValue: acumulador de todas as chamadas callbackFN
+
+currentValue: elemento atual sendo acessado pela função
+
+
+ 

@@ -1,0 +1,69 @@
+Método é uma porção de código disponibilizada por uma classe, que é executado quando requerido. Responsaveis por definir e realizar um determinado comportamento.
+
+<?visibilidade?> <?tipo?> <?modificador?> retorno nome (<?parâmetros?>) <?exceções?>
+código
+
+V: publico, protected ou private
+T concreto ou abstrato
+M static ou final
+R tipo de dado ou void
+N nome que é fornecido ao método
+P parametros que pode receber
+E execeções que pode lançar
+C código
+
+Ex: 
+public String getNome(){...} retorna uma string
+public double calcularTotalNota(){...}
+public int verificarDistancia (int cordenada1, int cordenada2){...}
+public abstract void executar();
+public void alterarFabricante (Fabricante fabricante) {..}
+public Relatoria gerarDadosAnaliticos(Cliente cliente, List<Compra> compras) {...}
+
+public static R N(P) {...}
+
+para chamar a partir de um objeto ou classe
+
+nome_da_classe.nome_do_metodo() com ou sem parametros
+nome_do_objeto.nome_do_metodo() com ou sem parametros
+
+------------------------------------------------------------------------
+Assinatura: nome+parametros
+
+calcularNota()
+
+Construtor e Destrutor: métodos especiais usados para criar e destruir objetos
+
+Mensagem: é o ato de solicitar ao método que o mesmo execute. Esta pode ser direcionada a um objeto ou a uma classe.
+
+passagem de parâmetros:
+.Por valor(cópia)
+.Por referência(endereço)
+
+Boas Práticas
+.nomes descritivos e curtos
+.notação camelo
+.deve possuir entre 80 e 120 linhas de código
+.evite lista de parâmetros longas
+.visibilidade adequada
+
+-----------------------------------------------------------------------------
+
+sobrecarga - mudou o parâmetros mas manteve o nome dos métodos.
+
+sobrescrita - sobrescreve o método
+
+----------------------------------------------------------------------
+
+retornos é  uma intrução de interrupção
+simbologia: return
+
+O método executa seu retorno quando:
+completa todas suas intruções internas
+chega a uma declaração explicita de return
+ou lança um exceção (erro)
+O tipo do retorno do método é definido na sua criação e pode ser um tipo primitivo ou objeto:
+O tipo de dado do return deve ser compatível com o do méodo;
+Se o método for sem retorno (void), pode ou não ter um "return" para encerrar sua execução
+Com o return posso armazenar o retorno em uma váriavel na main por exemplo
+---------------------------------------------------------------------------

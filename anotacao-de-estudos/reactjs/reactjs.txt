@@ -1,0 +1,25 @@
+Uma biblioteca JavaScript para criar interfaces de usuário
+
+criada em 2011 utilizada no facebook
+
+2012 instagram
+
+2013 liberação 
+
+2015 - react native
+
+2015 - UWP (projetos para aplicação desktop)
+
+não é um framework igual um Angular
+
+vantagem= ter mais controle do código, n se limitando ao framework
+
+desvantagem - eco sistema imenso
+
+linguagem declarativa.
+
+pode ser udado em qualquer lugar.
+
+componentes (pedaços encaixados nna aplicação)
+
+---------------------------------------------------------------------------------

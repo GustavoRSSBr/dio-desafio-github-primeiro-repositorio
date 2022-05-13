@@ -1,0 +1,92 @@
+D.O.M
+	o dom html É UM PADRÃO DE COMO VOCÊ ACESSA E MODIFICA OS ELEMENTOS html DE UMA PÁGINA.  filho do BOM
+	
+x 
+
+B.O.M 
+	Tudo o que está dentro do objeto window.
+
+"sem o DOM tu não é BOM"
+
+métodos
+	tag:  O que representa o seu elemento
+	id: atributo, que é único. Se quiser que um elemento tenha mais de um ID usa a classe.
+
+
+	document.getElementById ('')
+		busca um elemento pela sua ID
+
+	document.getElementsByTagName(''); (precisa acessar o index)
+		retorna um array.
+
+	document.getElementsByClassName(); (precisa acessar o index)
+		retorna a classe
+	
+	document.querySelectorALL() seleciona um elemento que tem mais de uma classe ou tag/classe
+	retorna um array
+
+	document.createElement(element) Cria um novo elemento HTML
+
+	document.removeChild(element) remove um elemento
+	
+	document.appendChild(element) adiciona um elemento
+
+	document.replaceChild(new, old) substitui um elemento
+
+
+Estilos (style.css)
+
+	Element.classList (acessa a lista de classes)
+
+
+<div id="meu-elemento" class="classe"> //código </div>
+
+
+const meuElemento = document.getElementByID ("meu-elemento") acessar o elemento no jv
+
+meuElemento.classList.add ("novo-estilo") adiciona uma nova classe
+
+meuElemento.classList.remove ("classe") remove uma classe chamada "classe"
+
+meuElemento.classList.togglet("dark-mode") add a classe caso não exista e tira a classe caso exista (interruptor)
+
+resultado:
+	<div id="meu-elemento" class="novo-estilo dark-mode">
+
+document.getElementsByTagName("p").style.color = "blue";
+
+	seleciona os parágrafos, e acessa o style deles, e coloca a cor azul 
+
+eventos
+	ação do usuário na web.
+
+eventos de mouse
+mouseover mouse em cima do elemento
+mouseout mouse sai do elemento
+click
+dbclick: double click
+
+eventos de atualização
+change
+load
+
+
+Acionar evento
+
+const botao = document.getElementById("meuBotão");
+
+botao.addEventListener ("click", outraFunção);
+
+
+HTML
+<h1 onclick="mudaTexto(this)> "Clique Aqui!</h1>
+
+<script> function mudaTexto(id) {
+	id.innerHTML = "Mudei!";  //muda o texto
+	}
+</script>
+
+no HTML adiciona o on na frente.
+
+		
+	

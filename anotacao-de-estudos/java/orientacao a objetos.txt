@@ -1,0 +1,63 @@
+é um paradigma de análise, projeto e programação de sistemas de software baseado na composição e interpretaçãoentre diversas unidades de software chamadas de objetos.
+
+possibilita o reuso 
+ 
+encapsulamento. 
+
+camada de proteção.
+
+Atributo: elemento da classe responsavel por definir sua estrutura de dados.
+
+A classe é o molde e o objeto é o produto desse molde.
+
+processo de ativação do método é chamado de mensagem. 
+carro.<método>;
+
+relações:
+Herança: é o relacionamento entre classes onde a classe finha herda os métodos da classe mãe. (subtipos mais especifícos) 
+
+class A extends B{...}
+
+simples: filha tem só uma classe mãe
+multipla: a classe filha tem uma ou mais classes mãe (java e C# não tem)
+
+Upcast: Subir na hierarquia de classe
+A a = new B(); // trasforma o subtipo B em A
+
+Downcast: descer na hierarquia de classe (não aconselhado a usar)
+
+Polimorfismo: A mesma ação, se comportando diferente
+
+
+Associação:
+Possibilita um relaciomento entre classes e objetos (usa métodos de outras classes)
+estrutural:
+
+	composição: "Com parte Todo"
+
+class Pessoa{
+Endereco endereço;
+}
+
+	agregação = "Sem parte Todo"
+class Disciplina{
+Aluno aluno;
+}
+comportamental:
+	Dependencia"depende de"
+class Compra {
+...
+finalizar (Cupom cupom< ...){
+...
+}
+}
+
+Interface:
+	contrato para ser utilizado.
+interface A {
+...
+}
+
+class B implements A {
+...
+}
